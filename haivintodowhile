@@ -1,0 +1,26 @@
+/* It's the same little game of "haivintofunz", but in this program I haven't utilized a function called int hai_vinto() */
+
+#include <stdio.h>
+
+int main()
+{
+	int n;
+	int cicla;
+	do {
+		puts("Inserisci un numero:");
+		scanf("%d", &n);
+		if (n==0){
+			break;
+		}
+		if (n<=50){
+			printf("Hai vinto!\n");
+		}
+		if (n>50){
+			printf("Hai perso!\n");
+		}
+		puts("Vuoi continuare? Si=1, No=0");
+		scanf("%d", &cicla);
+	} while(cicla!=0);
+	printf("Fine del ciclo");
+	return 0;
+}
