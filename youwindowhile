@@ -1,4 +1,5 @@
-/* It's the same little game of "haivintofunz", but in this program I haven't utilized a function called int hai_vinto() */
+/* It's the same little game of "haivintofunz", but in this program I haven't utilized a function called "hai_vinto()"
+
 
 #include <stdio.h>
 
