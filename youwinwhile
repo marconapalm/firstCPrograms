@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+	int numero;
+	numero=3;
+	int cicla;
+	cicla=1;
+	while (numero!=0 && cicla==1) {
+		puts("Inserisci un numero: ");
+		scanf ("%i", &numero);
+		if (numero==0) {
+			break;
+		}
+		if (numero<=50) {
+			printf("Hai vinto!\n");
+		}
+		if (numero>50) {
+			printf("Hai perso!\n");
+		}
+		puts("Vuoi continuare? Si=1, No=0");
+		scanf("%i", &cicla);
+	}
+	printf("Fine del ciclo");
+	return 0;
+}
