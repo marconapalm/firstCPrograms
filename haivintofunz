@@ -1,0 +1,41 @@
+/*This progam is a little game. If you enter a number that is less than or equal to 50, you will win.
+  While if you enter a number that is greater than 50, you will lose.
+  If you enter 0, the cycle will end.
+*/
+
+#include <stdio.h>
+
+int hai_vinto(n)
+{
+	if (n<=50) {
+		return 1;
+	}
+	else{
+		return 0;
+	}
+}
+
+int main()
+{
+	int n;
+	int cicla;
+	do {
+		puts("Inserisci un numero:");
+		scanf("%d", &n);
+		if (n==0){
+			break;
+		}
+		else{
+			if (hai_vinto(n)==1){
+				printf("Hai vinto!\n");
+			}
+			else {
+				printf("Hai perso!\n");
+			}
+		}
+		puts("Vuoi continuare? Si=1, No=0");
+		scanf("%d", &cicla);
+	} while(cicla==1);
+	printf("Fine del ciclo");
+	return 0;
+}
