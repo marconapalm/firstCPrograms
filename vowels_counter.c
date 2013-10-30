@@ -1,6 +1,6 @@
 /*
  *  source_file.c
- *	This program counts how many vowels there are in an entered string
+ *	This program counts how many vowels there are in an entered line
  *  Created on: 28/ott/2013
  *  Author: Marco Rapaccini
  */
@@ -10,12 +10,12 @@
 
 int main()
 {
-	char string[101];
+	char line[101];
 	int find=0, num_vowels=0;
 	puts("Enter the string: \n");
-	scanf("%s", string);
-	while (find<strlen(string)) { /*The cycle will continue until there are no more characters in the string*/
-		if (string[find]=='A' || string[find]=='a' || string[find]=='E' || string[find]=='e' || string[find]=='I' || string[find]=='i' || string[find]=='O' || string[find]=='o' || string[find]=='U' || string[find]=='u'){
+	scanf("%s", line);
+	while (find<strlen(line)) { /*The cycle will continue until there are no more characters*/
+		if (line[find]=='A' || line[find]=='a' || line[find]=='E' || line[find]=='e' || line[find]=='I' || line[find]=='i' || line[find]=='O' || line[find]=='o' || line[find]=='U' ||line[find]=='u'){
 			num_vowels++;
 		}
 		find++;
