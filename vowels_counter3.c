@@ -30,7 +30,7 @@ void vowels_counter(char line[100]){
 int main(){
         char line[100];
         puts("Enter the string: ");
-        scanf("%s", line);
+        fgets(line, sizeof(line),stdin);
         vowels_counter(line); /*Invoking method*/
         return 0;
 }
