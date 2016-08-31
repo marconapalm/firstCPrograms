@@ -1,3 +1,3 @@
 firstCPrograms
 ===========
-First C programs did at the University.
+First C programs I did at the University.
